@@ -1,0 +1,26 @@
+# English strings go here for Rails i18n
+en:
+   btn_add: Add
+   lbl_description: Selects hours percentage before you get the notification from Redmine
+   changes_saved: Changes saved
+   plugin_description: This plugin allows you to config some alerts when the amount of hours of a project reachs a percentage of the estimated hours.
+   plugin_title: Notifications
+   manage_notification_projects: Config project's alerts
+   notification_by: Notification sent by HoursNotification plugin
+   alert_perc: Alert percentage
+   total_hours: Total hours
+   estimated_hours: Estimated hours 
+   notification_desc: The following alert has been fired from Redmine.
+   lbl_description_roles: Selects role that will recieve the alerts.
+   sent_by: Notification sent by HoursNotification plugin.
+   perc_estimated_hours: Percentage of time used
+   project: project
+   add_roles: Please, associate role to this project
+   no_perc_available: You cannot select any alert for this project due your total time is greater than total time.
+   project: Project
+   hours: Hours
+   name: Name
+   link: Link
+   project_alerts: Alerts
+   no_role_selected: You have not selected any role.
+   no_alert_selected: You have not selected any alert

@@ -1,0 +1,10 @@
+= hoursnotification
+
+  name: 'Hours-Notification plugin'
+  author: 'Francisco Jose Romero Maestre - Cristian Martin Redondo AgiliaCenter ©2016 All rights reserved '
+  description: 'This is a plugin for Redmine to add estimate time to a project and configure some alerts when you reach a percentage.'
+  version: '1.0.0'
+  url: ''
+  author_url: 'http://agiliacenter.com'
+  contact: info@agiliacenter.com
+

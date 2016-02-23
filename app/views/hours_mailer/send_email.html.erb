@@ -1,0 +1,17 @@
+<p> <%= t(:notification_desc) %> </p>
+<h3>
+	<%= t(:project)%>: <%= link_to @project.name , @project_url %>
+</h3>
+<ul>
+	<li>
+		<p><%= t(:estimated_hours) %>: <%= @project.estimated_hours %> h </p>
+	</li>
+	<li>
+		<p><%= t(:total_hours) %>: <%= @total_hours %> h </p>
+	</li>
+	<li>
+		<p> <%= t(:alert_perc) %>: <%= @alert.percentage %> %</p>
+	</li>
+</ul>
+
+<p style="font-size: 10px;"> <%= t(:sent_by) %> , AgiliaCenter S.L © </p>

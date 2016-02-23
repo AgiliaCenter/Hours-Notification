@@ -1,0 +1,26 @@
+# Strings en castellano para Rails i18n
+es:
+  btn_add: Añadir
+  lbl_description: Selecciona los porcentajes de las horas invertidas para que el sistema te notifique.
+  changes_saved: Cambios guardados
+  plugin_description: Este plugin te permite configurar alertas cuando el tiempo invertido del proyecto supera un porcentaje del estimado inicialmente.
+  plugin_title: Notificaciones 
+  manage_notification_projects: Configurar las alertas en los proyectos.
+  notification_by: Notificacion enviada por el plugin HoursNotification.
+  alert_perc: Porcentaje de la alerta
+  total_hours: Horas totales consumidas del proyecto
+  estimated_hours: Horas estimadas del proyecto
+  notification_desc: La siguiente alerta ha sido enviada desde Redmine.
+  lbl_description_roles: Selecciona el/los rol/es que recibiran la alerta
+  sent_by: Notificacion enviada por el plugin HoursNotification
+  perc_estimated_hours: Porcentaje de tiempo utilizado
+  project: Proyecto
+  add_roles: Por favor, asocia roles a este proyecto.
+  no_perc_available: No puedes configurar ningula alerta para este proyecto debido a que el tiempo total supera el estimado.
+  project: Proyecto
+  hours: Horas
+  name: Nombre
+  link: Enlace
+  project_alerts: Notificaciones
+  no_role_selected: No has seleccionado ningún role.
+  no_alert_selected: No has seleccionado ninguna alerta.

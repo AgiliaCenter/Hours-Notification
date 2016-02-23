@@ -1,0 +1,12 @@
+<h3> <%= l(:estimated_hours) %></h3>
+<span class="icon icon-time"> <%= @project.estimated_hours.nil? ? 0.0 : @project.estimated_hours   %> </span>
+
+<% if @total_hours.nil? or @project.estimated_hours.nil? %>
+	<p> <%= t(:perc_estimated_hours) %>: 0.00% </p>
+
+<% else %>
+	<p> <%= t(:perc_estimated_hours) %>: <%= ((@total_hours / @project.estimated_hours) * 100).round(2).to_s + "%" %> </p>
+<% end %>
+
+
+

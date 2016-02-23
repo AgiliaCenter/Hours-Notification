@@ -1,0 +1,39 @@
+<h3> <%= l(:project_alerts) %> </h3>
+
+<%= form_tag(project_notification_create_path, method: "post") do %>
+
+    <%= label_tag l(:lbl_description) %>
+    <ul class="checkbox-percentages">
+       <% if not @start_range.nil? %>
+            <% ((@start_range..100).step(5)).each do |item| %>
+                <li>
+                    <%= check_box_tag 'percentage[]', item , @selected_values.include?(item) %>
+                    <%= item.to_s + "%" %>
+                </li>
+            <% end %>
+        <% else %>
+            <p> <%= l(:no_perc_available)%> </p>
+        <% end %>
+    </ul>
+    <%= label_tag l(:lbl_description_roles) %>
+
+    <% if @roles.blank? %>
+        <p> <%= l(:add_roles) %> </p>
+    <% else %>
+        <ul class="checkbox-roles">
+            <% @roles.keys.sort.each do |role| %>
+                <li>
+                    <%= check_box_tag 'roles[]', role.name , @selected_roles.include?(role.name) %>
+                    <%= role.name %>
+                </li>
+            <% end %>
+        </ul>
+    <% end %>
+    
+    <div class= "add" >
+        <%= submit_tag(l(:btn_add) , :class => "btnadd") %>
+    </div>	
+<% end %>
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag 'hoursnotification', :plugin => 'Hoursnotification' %>
+<% end %>

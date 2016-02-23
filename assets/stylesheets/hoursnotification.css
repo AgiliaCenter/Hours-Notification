@@ -1,0 +1,38 @@
+
+.select {
+	width: 5%;
+	margin-left: 40px;
+	/**font-size: 12px; */
+
+}
+
+.select > option {
+	margin-left: 10px;
+	margin-bottom: 5xp;
+}
+
+.description {
+	text-align: justify;
+}
+
+.add {
+	clear: both;
+}
+
+.btnadd {
+	margin-left: 40px;
+	margin-top: 15px;
+}
+
+.checkbox-roles > li {
+	list-style: none;
+	float:left;	
+}
+
+.txt-description {
+	text-align: justify;
+}
+
+.checkbox-percentages > li {
+	list-style: none;
+}
