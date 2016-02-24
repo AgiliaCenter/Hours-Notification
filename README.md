@@ -8,7 +8,7 @@ Hours-Notification, es un plugin que permite añadir a los proyectos de [Redmine
 
 ### 1. Instalación del plugin
 - Parar Redmine
-- Clonar el repositorio en raiz_redmine/plugins.
+- Clonar el repositorio en raiz_redmine/plugins.El directorio del plugin debe ser hoursnotification
 
 	```
 	git clone git://github.com/AgiliaCenter/Hours-Notification
