@@ -20,6 +20,11 @@ Hours-Notification, es un plugin que permite añadir a los proyectos de [Redmine
     rake redmine:plugins:migrate NAME=hoursnotification RAILS_ENV=production
   ```
   
+- En el fichero config/application.rb añadir la siguiente entrada:
+  ```
+  config.action_mailer.default_url_options = { host: '192.168.19.7:3000' }
+  ``` 
+  
 - Iniciar Redmine
 
 ### 2. Eliminar el plugin
@@ -30,6 +35,11 @@ Hours-Notification, es un plugin que permite añadir a los proyectos de [Redmine
     ```
       rake redmine:plugins:migrate NAME=hoursnotification VERSION=0 RAILS_ENV=production
     ```
+    
+   - En el fichero config/application.rb eliminar la siguiente entrada:
+  ```
+  config.action_mailer.default_url_options = { host: '192.168.19.7:3000' }
+  ```  
     
   - Eliminar la carpeta hoursnotification que se encuentra en raiz_redmine/plugins
   - Iniciar Redmine
